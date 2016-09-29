@@ -11,14 +11,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * Created by mars on 16-9-28.
  */
-@RequestMapping("/stu")
 @Controller
+@RequestMapping(value = "/stu")
 public class StuSvcController {
     private static final Logger  LOGGER = LoggerFactory.getLogger(StuSvcController.class);
 
