@@ -3,10 +3,10 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
  <configuration>
     <settings>
-        <setting name="cacheEnable" value="true"/>
-        <setting name="lazyLoadingEnable" value="false"/>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="false"/>
         <setting name="aggressiveLazyLoading" value="true"/>
-        <setting name="logImpl" value="LOG4J"/>
+        <setting name="logImpl" value="SLF4J"/>
     </settings>
     <plugins>
         <plugin interceptor="com.github.pagehelper.PageHelper">

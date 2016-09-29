@@ -15,13 +15,15 @@
     <mvc:resources mapping="/js/**" location="/WEB-INF/js"></mvc:resources>
     <mvc:resources mapping="/imag/**" location="/WEB-INF/imag"></mvc:resources>
 
-    <bean id="internalResourceViewResolver"
-          class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass"
                   value="org.springframework.web.servlet.view.JstlView"></property>
         <property name="prefix" value="/WEB-INF/jsp/"></property>
         <property name="suffix" value=".jsp"></property>
     </bean>
+
 
     <!--JSON转换-->
     <bean id="jsonConvert" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
