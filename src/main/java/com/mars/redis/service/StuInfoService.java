@@ -11,4 +11,6 @@ public interface StuInfoService {
 
 
     List<Student> getStuById(Integer id);
+
+    Integer testAdd(Integer num);
 }

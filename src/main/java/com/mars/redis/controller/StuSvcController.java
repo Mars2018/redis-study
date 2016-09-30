@@ -29,4 +29,13 @@ public class StuSvcController {
     public List<Student> queryStus(@RequestParam(value = "id", required = false) Integer id){
         return stuInfoService.getStuById(id);
     }
+
+    @RequestMapping(value = "/testadd", produces = "application/json;charset=utf-8", method = RequestMethod.POST)
+    @ResponseBody
+    public Integer testAdd(@RequestParam(value = "num", required = false) Integer num){
+        return stuInfoService.testAdd(num);
+    }
+
+
+
 }
