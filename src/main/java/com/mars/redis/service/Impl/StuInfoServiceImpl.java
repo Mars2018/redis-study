@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ *
  * Created by mars on 16-9-28.
  */
 @Service(value = "stuInfoService")
@@ -59,8 +60,8 @@ public class StuInfoServiceImpl implements StuInfoService {
     }
 
     private void initStu(Student stu) {
-        stu.setId(Integer.parseInt(RandomUtil.generateNumberString(6)));
-        stu.setName(RandomUtil.generateLetterString(6));
+        stu.setId(Integer.parseInt(RandomUtil.generateNumberString(8)));
+        stu.setName(RandomUtil.generateLetterString(10));
         stu.setAge(Integer.parseInt(RandomUtil.generateNumberString(2)));
         stu.setGrade(Integer.parseInt(RandomUtil.generateNumberString(1)));
         stu.setSex(stu.getId()%2 == 0 ? "female":"male");
