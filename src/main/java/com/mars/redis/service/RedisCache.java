@@ -1,6 +1,5 @@
 package com.mars.redis.service;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.*;
@@ -16,7 +15,7 @@ import java.util.*;
 public class RedisCache<T> {
 
     @Autowired
-    @Qualifier("jedisTemplate")
+    @Qualifier("redisTemplate")
     public RedisTemplate redisTemplate;
 
     /**

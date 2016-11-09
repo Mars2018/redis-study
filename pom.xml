@@ -7,6 +7,7 @@
     <groupId>com.mars.practice</groupId>
     <artifactId>redis</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -304,6 +305,7 @@
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
+                
             </plugin>
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
