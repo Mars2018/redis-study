@@ -1,6 +1,11 @@
 package com.mars.redis.model;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable{
+
+    private static final long serialVersionUID = 6419823082937838398L;
+
     private Integer id;
 
     private String name;

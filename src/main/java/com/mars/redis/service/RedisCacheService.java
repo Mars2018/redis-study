@@ -12,7 +12,7 @@ import java.util.*;
  * Created by MarsWang on 2016/10/13.
  */
 @Service
-public class RedisCache<T> {
+public class RedisCacheService<T> {
 
     @Autowired
     @Qualifier("redisTemplate")
